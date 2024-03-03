@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    /* Elimina cualquier margen por defecto del elemento body. */
+    font-family: Arial, sans-serif;
+    /* Establece la fuente del texto a Arial, con una fuente sans-serif como alternativa. */
+    background-color: #000;
+    /* Colorea el fondo del cuerpo de la página de negro. */
+    width: 100%;
+    /* Establece el ancho del cuerpo al 100% del ancho del viewport. */
+    height: 100%;
+    /* Establece la altura del cuerpo al 100% del alto del viewport. */
+}
+
+.header {
+    text-align: center;
+    /* Alinea el texto dentro del encabezado al centro. */
+    padding: 10px;
+    /* Añade un relleno de 10px a todos los lados del encabezado. */
+    width: 100%;
+    /* Establece el ancho del encabezado al 100% del ancho del contenedor padre. */
+    background-color: #f8f9fa;
+    /* Colorea el fondo del encabezado de un gris claro. */
+    color: #ff0000;
+    /* Establece el color del texto del encabezado a rojo. */
+    position: fixed;
+    /* Hace que el encabezado sea fijo y siempre visible en la parte superior. */
+    top: 0;
+    /* Coloca el encabezado en la parte superior de la página. */
+    font-size: 2vh;
+    /* Establece el tamaño de la fuente del encabezado al 2% de la altura del viewport. */
+}
+
+.content {
+    margin: 10px;
+    /* Añade un margen de 10px alrededor del contenido. */
+    align-items: center;
+    /* Alinea verticalmente los elementos dentro del contenido al centro (redundante y no efectivo sin display: flex). */
+}
+
+.content img {
+    max-width: 100%;
+    /* Asegura que las imágenes dentro del contenido no sean más anchas que su contenedor. */
+    margin-top: 90px;
+    /* Añade un margen superior de 90px a las imágenes, para evitar la superposición con el encabezado fijo. */
+}
+
+.footer {
+    text-align: center;
+    /* Alinea el texto dentro del pie de página al centro. */
+    padding: 10px;
+    /* Añade un relleno de 10px a todos los lados del pie de página. */
+    background-color: #f8f9fa;
+    /* Colorea el fondo del pie de página de un gris claro. */
+    bottom: 0;
+    /* Posiciona el pie de página en la parte inferior de la página (requiere position:fixed para ser efectivo). */
+}
